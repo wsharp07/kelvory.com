@@ -1,0 +1,54 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="kelvoryGradient" x1="42" y1="30" x2="210" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="0.52" stop-color="#85FFD7"/>
+      <stop offset="1" stop-color="#D3FF5F"/>
+    </linearGradient>
+    <linearGradient id="kelvoryOrbit" x1="28" y1="40" x2="226" y2="196" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F7DFF"/>
+      <stop offset="1" stop-color="#67F0FF"/>
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M128 18L202 60V196L128 238L54 196V60L128 18Z"
+    stroke="url(#kelvoryGradient)"
+    stroke-opacity="0.28"
+    stroke-width="16"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M84 52V204"
+    stroke="url(#kelvoryGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+  <path
+    d="M92 128L172 54"
+    stroke="url(#kelvoryGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+  <path
+    d="M92 128L184 202"
+    stroke="url(#kelvoryGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+  <path
+    d="M34 108C42 60 78 22 128 14"
+    stroke="url(#kelvoryOrbit)"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+  <path
+    d="M220 148C208 190 176 226 128 240"
+    stroke="url(#kelvoryOrbit)"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+  <circle cx="34" cy="108" r="10" fill="#5F7DFF"/>
+  <circle cx="128" cy="14" r="10" fill="#67F0FF"/>
+  <circle cx="220" cy="148" r="10" fill="#D3FF5F"/>
+</svg>
