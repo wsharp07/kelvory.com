@@ -20,8 +20,11 @@
 ## Design system notes
 
 - Brand direction is "high-technology skunkworks": dark atmospheric surfaces, cyan/lime/cobalt signal accents, geometric framing, and restrained glow.
-- The current public homepage blends Xtract's black/violet/magenta palette with Conicorn-style section pacing: centered orbital hero, ecosystem logo strip, statement/media block, values trio, services grid, process timeline, case-study card, and a strong closing CTA.
+- The current public homepage is a teaser-style R&D surface for Kelvory as an autonomous systems lab. Copy should emphasize frontier systems work, memory-native agents, digital twins, operator control, and ideas that feel early rather than agency-style service selling.
+- The public header now uses a dark rounded slab with simple nav links on desktop and a three-line hamburger button on mobile. Keep navigation free of CTA buttons.
 - Homepage-specific layout is now driven by custom sections such as `.logo-strip-section`, `.statement-section`, `.values-section`, `.services-section`, `.timeline`, and `.case-study-card`. Prefer extending those patterns rather than reintroducing generic feature-card grids on the public home page.
+- Public-facing pages should not expose email addresses or contact CTAs unless the user explicitly asks to bring them back. The current homepage and `404.html` are intentionally teaser-only.
+- Avoid references to outside companies on the public homepage, and keep the internal brand guide philosophies written as standalone principles rather than attributing them to other organizations.
 - Legacy cyan/lime/cobalt tokens still exist in `styles.css` for internal pages and older exploration surfaces. Do not remove them casually just because the public homepage now uses the violet system.
 - Typography uses `Sora` for headlines, `IBM Plex Sans` for body copy, and `IBM Plex Mono` for technical labels.
 - The SVG logo lives in `assets/logo-symbol.svg`; the favicon is `assets/favicon.svg`.

@@ -11,7 +11,9 @@ for (const node of yearNodes) {
 if (menuToggle && siteNav) {
   const setMenuState = (isOpen) => {
     siteNav.classList.toggle("is-open", isOpen);
+    menuToggle.classList.toggle("is-active", isOpen);
     menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
   };
 
   menuToggle.addEventListener("click", () => {
@@ -30,6 +32,13 @@ if (menuToggle && siteNav) {
       setMenuState(false);
     }
   };
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+      setMenuState(false);
+      menuToggle.focus();
+    }
+  });
 
   if (typeof desktopMedia.addEventListener === "function") {
     desktopMedia.addEventListener("change", handleDesktopChange);
