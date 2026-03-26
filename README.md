@@ -32,4 +32,6 @@ This project is configured for GitHub Pages with a custom workflow and custom do
 5. Confirm your custom domain is `kelvory.com`.
 6. Point your DNS to GitHub Pages using GitHub's current custom-domain instructions.
 
+If the first workflow run fails before Pages has ever been enabled for the repository, open `Settings` -> `Pages`, choose `GitHub Actions` once, and re-run or re-push. GitHub must enable custom workflow publishing for the repository before `actions/configure-pages` can succeed.
+
 No build command is required because the site is deployed directly as static files.

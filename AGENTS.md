@@ -13,6 +13,7 @@
 - `.nojekyll` is present so GitHub Pages will not run Jekyll processing on the static files.
 - `CNAME` is set to `kelvory.com`. If the production hostname changes, update that file.
 - The workflow currently deploys on pushes to `main`. If the repository uses a different default branch, update the workflow trigger.
+- On a fresh repository, GitHub Pages may need to be enabled once in `Settings -> Pages` with source set to `GitHub Actions` before `actions/configure-pages` will deploy successfully.
 
 ## Design system notes
 
