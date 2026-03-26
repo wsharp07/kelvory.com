@@ -1,0 +1,36 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vectorSlotSurface" x1="18" y1="12" x2="78" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5EAFF"/>
+      <stop offset="0.42" stop-color="#DFABFF"/>
+      <stop offset="1" stop-color="#814AC8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="80" height="80" rx="24" fill="url(#vectorSlotSurface)"/>
+  <rect x="8.5" y="8.5" width="79" height="79" rx="23.5" stroke="#FAF6FF" stroke-opacity="0.18"/>
+  <path
+    d="M20 56C20 47.2 27.2 40 36 40H46C54.8 40 62 47.2 62 56V60C62 68.8 54.8 76 46 76H36C27.2 76 20 68.8 20 60V56Z"
+    fill="#120C1D"
+  />
+  <path
+    d="M50 38L70 18"
+    stroke="#120C1D"
+    stroke-width="9.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M56 18H70V32"
+    stroke="#120C1D"
+    stroke-width="9.5"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M20 66H42"
+    stroke="#120C1D"
+    stroke-width="9.5"
+    stroke-linecap="round"
+  />
+</svg>

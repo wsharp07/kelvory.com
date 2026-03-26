@@ -1,0 +1,37 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="prismStem" x1="52" y1="42" x2="122" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="0.52" stop-color="#85FFD7"/>
+      <stop offset="1" stop-color="#D3FF5F"/>
+    </linearGradient>
+    <linearGradient id="prismTop" x1="104" y1="54" x2="220" y2="130" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F7DFF"/>
+      <stop offset="0.7" stop-color="#67F0FF"/>
+      <stop offset="1" stop-color="#85FFD7"/>
+    </linearGradient>
+    <linearGradient id="prismBottom" x1="104" y1="126" x2="212" y2="222" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="0.58" stop-color="#85FFD7"/>
+      <stop offset="1" stop-color="#D3FF5F"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="58" y="42" width="30" height="172" rx="10" fill="url(#prismStem)"/>
+  <path d="M104 124L190 54L214 82L130 146Z" fill="url(#prismTop)"/>
+  <path d="M104 132L198 188L178 214L124 162Z" fill="url(#prismBottom)"/>
+  <path
+    d="M58 42L214 82"
+    stroke="#5F7DFF"
+    stroke-opacity="0.18"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+  <path
+    d="M58 214L198 188"
+    stroke="#D3FF5F"
+    stroke-opacity="0.18"
+    stroke-width="4"
+    stroke-linecap="round"
+  />
+</svg>

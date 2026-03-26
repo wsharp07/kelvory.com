@@ -1,0 +1,53 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="relayGradient" x1="54" y1="40" x2="210" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="0.55" stop-color="#85FFD7"/>
+      <stop offset="1" stop-color="#D3FF5F"/>
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M76 54V202"
+    stroke="url(#relayGradient)"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+  <path
+    d="M92 128L176 74"
+    stroke="url(#relayGradient)"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+  <path
+    d="M92 128L188 190"
+    stroke="url(#relayGradient)"
+    stroke-width="16"
+    stroke-linecap="round"
+  />
+  <circle cx="76" cy="54" r="12" fill="#67F0FF"/>
+  <circle cx="176" cy="74" r="12" fill="#5F7DFF"/>
+  <circle cx="188" cy="190" r="12" fill="#D3FF5F"/>
+  <circle cx="92" cy="128" r="14" fill="#070B14" stroke="url(#relayGradient)" stroke-width="8"/>
+  <path
+    d="M42 54H60"
+    stroke="#67F0FF"
+    stroke-opacity="0.55"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M192 74H214"
+    stroke="#5F7DFF"
+    stroke-opacity="0.55"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+  <path
+    d="M202 190H224"
+    stroke="#D3FF5F"
+    stroke-opacity="0.55"
+    stroke-width="6"
+    stroke-linecap="round"
+  />
+</svg>

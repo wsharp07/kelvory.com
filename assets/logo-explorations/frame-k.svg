@@ -1,0 +1,46 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="frameKGradient" x1="56" y1="36" x2="206" y2="222" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="0.48" stop-color="#85FFD7"/>
+      <stop offset="1" stop-color="#D3FF5F"/>
+    </linearGradient>
+    <linearGradient id="frameKAccent" x1="116" y1="50" x2="208" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5F7DFF"/>
+      <stop offset="1" stop-color="#67F0FF"/>
+    </linearGradient>
+  </defs>
+
+  <path
+    d="M70 52H146L194 100V204H70V52Z"
+    stroke="url(#frameKGradient)"
+    stroke-opacity="0.24"
+    stroke-width="14"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M146 52L194 100"
+    stroke="url(#frameKAccent)"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+  <path
+    d="M92 64V192"
+    stroke="url(#frameKGradient)"
+    stroke-width="20"
+    stroke-linecap="round"
+  />
+  <path
+    d="M104 128L180 72"
+    stroke="url(#frameKGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+  <path
+    d="M104 128L188 194"
+    stroke="url(#frameKGradient)"
+    stroke-width="18"
+    stroke-linecap="round"
+  />
+  <circle cx="194" cy="100" r="8" fill="#67F0FF"/>
+</svg>

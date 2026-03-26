@@ -1,0 +1,15 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vectorChannelSurface" x1="18" y1="12" x2="78" y2="84" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7EEFF"/>
+      <stop offset="0.5" stop-color="#D899FF"/>
+      <stop offset="1" stop-color="#8B53D8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="8" y="8" width="80" height="80" rx="24" fill="url(#vectorChannelSurface)"/>
+  <rect x="8.5" y="8.5" width="79" height="79" rx="23.5" stroke="#FAF6FF" stroke-opacity="0.16"/>
+  <path d="M18 48L30 36H42L30 48L42 60H30L18 48Z" fill="#120C1D"/>
+  <rect x="45" y="35" width="6" height="26" rx="3" fill="#120C1D"/>
+  <path d="M54 48L68 34H80L66 48L80 62H68L54 48Z" fill="#120C1D"/>
+</svg>

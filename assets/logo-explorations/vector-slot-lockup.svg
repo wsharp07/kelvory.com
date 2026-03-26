@@ -1,0 +1,63 @@
+<svg width="620" height="128" viewBox="0 0 620 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="vectorSlotSurfaceLockup" x1="26" y1="20" x2="102" y2="108" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5EAFF"/>
+      <stop offset="0.42" stop-color="#DFABFF"/>
+      <stop offset="1" stop-color="#814AC8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="96" height="96" rx="28" fill="url(#vectorSlotSurfaceLockup)"/>
+  <rect x="16.5" y="16.5" width="95" height="95" rx="27.5" stroke="#FAF6FF" stroke-opacity="0.18"/>
+  <path
+    d="M30 74C30 63.5066 38.5066 55 49 55H60C70.4934 55 79 63.5066 79 74V79C79 89.4934 70.4934 98 60 98H49C38.5066 98 30 89.4934 30 79V74Z"
+    fill="#120C1D"
+  />
+  <path
+    d="M65 55L88 32"
+    stroke="#120C1D"
+    stroke-width="11"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M72 32H88V48"
+    stroke="#120C1D"
+    stroke-width="11"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M30 86H56"
+    stroke="#120C1D"
+    stroke-width="11"
+    stroke-linecap="round"
+  />
+
+  <g stroke="#FAF6FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M154 32V96"/>
+    <path d="M154 64L188 32"/>
+    <path d="M154 64L190 96"/>
+
+    <path d="M214 32V96"/>
+    <path d="M214 32H250"/>
+    <path d="M214 64H244"/>
+    <path d="M214 96H250"/>
+
+    <path d="M274 32V96"/>
+    <path d="M274 96H308"/>
+
+    <path d="M326 32L350 96"/>
+    <path d="M374 32L350 96"/>
+
+    <rect x="392" y="32" width="52" height="64" rx="18"/>
+
+    <path d="M466 32V96"/>
+    <path d="M466 32H496C508 32 516 40 516 52C516 64 508 72 496 72H466"/>
+    <path d="M494 72L518 96"/>
+
+    <path d="M538 32L560 58"/>
+    <path d="M582 32L560 58"/>
+    <path d="M560 58V96"/>
+  </g>
+</svg>

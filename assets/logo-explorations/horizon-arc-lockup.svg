@@ -1,0 +1,58 @@
+<svg width="620" height="128" viewBox="0 0 620 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="horizonArcGradientLockup" x1="24" y1="20" x2="106" y2="110" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2D8FF"/>
+      <stop offset="0.58" stop-color="#C67DFF"/>
+      <stop offset="1" stop-color="#814AC8"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="96" height="96" rx="28" fill="#0D0D14"/>
+  <rect x="17.5" y="17.5" width="93" height="93" rx="26.5" stroke="url(#horizonArcGradientLockup)" stroke-width="3"/>
+  <path
+    d="M32 78H58"
+    stroke="#FAF6FF"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+  <path
+    d="M54 78C54 60 68 46 86 46H90"
+    stroke="url(#horizonArcGradientLockup)"
+    stroke-width="10"
+    stroke-linecap="round"
+  />
+  <path
+    d="M80 38L90 46L80 54"
+    stroke="url(#horizonArcGradientLockup)"
+    stroke-width="10"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+
+  <g stroke="#FAF6FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M154 32V96"/>
+    <path d="M154 64L188 32"/>
+    <path d="M154 64L190 96"/>
+
+    <path d="M214 32V96"/>
+    <path d="M214 32H250"/>
+    <path d="M214 64H244"/>
+    <path d="M214 96H250"/>
+
+    <path d="M274 32V96"/>
+    <path d="M274 96H308"/>
+
+    <path d="M326 32L350 96"/>
+    <path d="M374 32L350 96"/>
+
+    <rect x="392" y="32" width="52" height="64" rx="18"/>
+
+    <path d="M466 32V96"/>
+    <path d="M466 32H496C508 32 516 40 516 52C516 64 508 72 496 72H466"/>
+    <path d="M494 72L518 96"/>
+
+    <path d="M538 32L560 58"/>
+    <path d="M582 32L560 58"/>
+    <path d="M560 58V96"/>
+  </g>
+</svg>
