@@ -6,9 +6,9 @@
     <title>Kelvory | Signal Not Found</title>
     <meta
       name="description"
-      content="The page you requested could not be located. Return to Kelvory's home surface."
+      content="The page you requested could not be located. Return to Kelvory's primary surface."
     >
-    <meta name="theme-color" content="#070b14">
+    <meta name="theme-color" content="#050507">
     <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
     </script>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body class="guide-page">
+  <body class="guide-page error-page">
     <div class="site-shell">
       <header class="site-header">
         <div class="header-row">
@@ -29,31 +29,51 @@
             <img src="assets/logo-symbol.svg" alt="Kelvory logo symbol" width="40" height="40">
             <span class="brand-lockup">
               <strong>Kelvory</strong>
-              <small>Signal Not Found</small>
+              <small>Signal Recovery Surface</small>
             </span>
           </a>
         </div>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./">Home</a>
+          <a class="nav-cta" href="mailto:hello@kelvory.com">Contact</a>
+        </nav>
       </header>
 
       <main>
-        <section class="section guide-hero">
+        <section class="section guide-hero error-shell">
           <div class="contact-panel is-visible">
-            <p class="eyebrow">404</p>
-            <h1>The requested surface does not exist.</h1>
+            <p class="eyebrow">404 / Signal Lost</p>
+            <div class="hero-badge">
+              <span class="badge-dot" aria-hidden="true"></span>
+              The requested page is not part of the current Kelvory grid.
+            </div>
+            <h1>The surface you asked for is off-grid.</h1>
             <p>
-              The link may be outdated, the path may be incorrect, or the signal may have moved.
-              Return to the main Kelvory interface and continue from there.
+              The link may be outdated, the route may be incorrect, or the page may have moved.
+              Return to the home surface and continue from the active navigation.
             </p>
             <div class="cta-row">
               <a class="button button-primary" href="./">Return Home</a>
               <a class="button button-secondary" href="mailto:hello@kelvory.com">Contact Kelvory</a>
+            </div>
+
+            <div class="contact-meta">
+              <article class="meta-block">
+                <span>Reset</span>
+                <strong>Jump back to the primary interface.</strong>
+              </article>
+              <article class="meta-block">
+                <span>Need help?</span>
+                <strong>Send the broken link and we’ll route you correctly.</strong>
+              </article>
             </div>
           </div>
         </section>
       </main>
 
       <footer class="site-footer">
-        <p>Kelvory builds high-technology systems for human amplification.</p>
+        <p>Kelvory builds memory-native AI systems for human amplification.</p>
         <p>&copy; <span data-current-year></span> Kelvory.</p>
       </footer>
     </div>

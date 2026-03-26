@@ -1,6 +1,8 @@
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector("#site-nav");
 const yearNodes = document.querySelectorAll("[data-current-year]");
+const revealNodes = document.querySelectorAll("[data-reveal]");
+const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
 for (const node of yearNodes) {
   node.textContent = String(new Date().getFullYear());
@@ -36,8 +38,24 @@ if (menuToggle && siteNav) {
   }
 }
 
-const revealNodes = document.querySelectorAll("[data-reveal]");
-const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+if (!prefersReducedMotion) {
+  const setPointerPosition = (xPercent, yPercent) => {
+    document.documentElement.style.setProperty("--pointer-x", `${xPercent}%`);
+    document.documentElement.style.setProperty("--pointer-y", `${yPercent}%`);
+  };
+
+  setPointerPosition(50, 18);
+
+  window.addEventListener(
+    "pointermove",
+    (event) => {
+      const xPercent = ((event.clientX / window.innerWidth) * 100).toFixed(2);
+      const yPercent = ((event.clientY / window.innerHeight) * 100).toFixed(2);
+      setPointerPosition(xPercent, yPercent);
+    },
+    { passive: true }
+  );
+}
 
 if (prefersReducedMotion) {
   for (const node of revealNodes) {
