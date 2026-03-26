@@ -5,6 +5,7 @@
 - This repository is a pure static marketing site for `kelvory.com`.
 - There is no build step or framework. Pages are plain HTML, CSS, JavaScript, and SVG assets.
 - Primary pages are `index.html`, `brand-guide.html`, and `404.html`.
+- The repository was bootstrapped locally with Git on branch `main` and an initial commit so it is ready to connect to a GitHub remote.
 
 ## Deployment assumptions
 
