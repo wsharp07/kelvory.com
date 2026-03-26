@@ -1,7 +1,39 @@
+const menuToggle = document.querySelector(".menu-toggle");
+const siteNav = document.querySelector("#site-nav");
 const yearNodes = document.querySelectorAll("[data-current-year]");
 
 for (const node of yearNodes) {
   node.textContent = String(new Date().getFullYear());
+}
+
+if (menuToggle && siteNav) {
+  const setMenuState = (isOpen) => {
+    siteNav.classList.toggle("is-open", isOpen);
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  };
+
+  menuToggle.addEventListener("click", () => {
+    setMenuState(!siteNav.classList.contains("is-open"));
+  });
+
+  siteNav.addEventListener("click", (event) => {
+    if (event.target instanceof HTMLElement && event.target.closest("a")) {
+      setMenuState(false);
+    }
+  });
+
+  const desktopMedia = window.matchMedia("(min-width: 821px)");
+  const handleDesktopChange = (event) => {
+    if (event.matches) {
+      setMenuState(false);
+    }
+  };
+
+  if (typeof desktopMedia.addEventListener === "function") {
+    desktopMedia.addEventListener("change", handleDesktopChange);
+  } else {
+    desktopMedia.addListener(handleDesktopChange);
+  }
 }
 
 const revealNodes = document.querySelectorAll("[data-reveal]");

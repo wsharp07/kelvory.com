@@ -16,24 +16,38 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     >
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="site-shell">
       <header class="site-header">
-        <a class="brand" href="index.html" aria-label="Kelvory home">
-          <img src="assets/logo-symbol.svg" alt="Kelvory logo symbol" width="40" height="40">
-          <span class="brand-lockup">
-            <strong>Kelvory</strong>
-            <small>Human Amplification Systems</small>
-          </span>
-        </a>
+        <div class="header-row">
+          <a class="brand" href="./" aria-label="Kelvory home">
+            <img src="assets/logo-symbol.svg" alt="Kelvory logo symbol" width="40" height="40">
+            <span class="brand-lockup">
+              <strong>Kelvory</strong>
+              <small>Human Amplification Systems</small>
+            </span>
+          </a>
 
-        <nav class="site-nav" aria-label="Primary">
+          <button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="site-nav"
+          >
+            Menu
+          </button>
+        </div>
+
+        <nav class="site-nav" id="site-nav" aria-label="Primary">
           <a href="#vectors">Capabilities</a>
           <a href="#model">Model</a>
           <a href="#culture">Culture</a>
-          <a href="brand-guide.html">Brand Guide</a>
+          <a href="#signals">Signals</a>
           <a class="nav-cta" href="#contact">Start a Project</a>
         </nav>
       </header>
@@ -51,7 +65,7 @@
 
             <div class="cta-row">
               <a class="button button-primary" href="#contact">Build With Kelvory</a>
-              <a class="button button-secondary" href="brand-guide.html">Explore the Brand</a>
+              <a class="button button-secondary" href="#model">See the R&amp;D Model</a>
             </div>
 
             <div class="signal-bar" aria-label="Kelvory positioning">
@@ -286,13 +300,13 @@
           </div>
         </section>
 
-        <section class="section brand-preview" id="brand">
+        <section class="section brand-preview" id="signals">
           <div class="section-heading" data-reveal>
-            <p class="eyebrow">Brand System</p>
-            <h2>A visual language for frontier software.</h2>
+            <p class="eyebrow">Operating Signals</p>
+            <h2>Built for teams that want more than a pilot.</h2>
             <p>
-              The identity pairs a geometric mark with signal-driven colors and a precise verbal
-              style. It should feel engineered, intelligent, and quietly dangerous in the best way.
+              Kelvory combines skunkworks speed with production-minded systems thinking. The goal
+              is not to generate AI theater. The goal is to create durable human leverage.
             </p>
           </div>
 
@@ -301,42 +315,42 @@
               <div class="logo-stage">
                 <img src="assets/logo-symbol.svg" alt="Kelvory symbol" width="120" height="120">
                 <div class="logo-word">
-                  <strong>Kelvory</strong>
-                  <span>Engineered for Human Amplification</span>
+                  <strong>Senior, small, high-context</strong>
+                  <span>Focused teams. Fast prototypes. Sharp execution.</span>
                 </div>
               </div>
             </article>
 
             <article class="brand-panel palette-panel" data-reveal>
-              <div class="swatch-grid">
-                <div class="swatch cyan">
-                  <span>Signal Cyan</span>
-                  <strong>#67F0FF</strong>
+              <div class="signal-grid">
+                <div class="signal-tile">
+                  <span>Memory-native</span>
+                  <strong>Knowledge becomes operational context.</strong>
                 </div>
-                <div class="swatch lime">
-                  <span>Ion Lime</span>
-                  <strong>#D3FF5F</strong>
+                <div class="signal-tile">
+                  <span>Human-centered</span>
+                  <strong>Systems amplify judgment instead of replacing it.</strong>
                 </div>
-                <div class="swatch cobalt">
-                  <span>Cobalt Relay</span>
-                  <strong>#5F7DFF</strong>
+                <div class="signal-tile">
+                  <span>Tool-connected</span>
+                  <strong>Agents act inside real workflows, not sandbox slides.</strong>
                 </div>
-                <div class="swatch obsidian">
-                  <span>Obsidian Core</span>
-                  <strong>#070B14</strong>
+                <div class="signal-tile">
+                  <span>Governed</span>
+                  <strong>Speed comes with traceability, review, and control.</strong>
                 </div>
               </div>
             </article>
 
             <article class="brand-panel voice-panel" data-reveal>
-              <h3>Brand voice</h3>
+              <h3>What working with Kelvory feels like</h3>
               <ul class="voice-list">
-                <li>Precise, not vague</li>
-                <li>Ambitious, not inflated</li>
-                <li>Intelligent, not academic</li>
-                <li>Human-centered, not machine-centered</li>
+                <li>Fast learning loops, not endless discovery decks</li>
+                <li>Deliberate systems design, not AI ornamentation</li>
+                <li>Clear decisions, measurable leverage, real adoption</li>
+                <li>Calm communication with a strong technical point of view</li>
               </ul>
-              <a class="text-link" href="brand-guide.html">Open the full brand guide</a>
+              <a class="text-link" href="#contact">Start a conversation</a>
             </article>
           </div>
         </section>
@@ -352,7 +366,7 @@
             </p>
             <div class="cta-row">
               <a class="button button-primary" href="mailto:hello@kelvory.com">hello@kelvory.com</a>
-              <a class="button button-secondary" href="brand-guide.html">Review Brand Guide</a>
+              <a class="button button-secondary" href="#vectors">Review capabilities</a>
             </div>
           </div>
         </section>
@@ -360,7 +374,7 @@
 
       <footer class="site-footer">
         <p>Kelvory builds high-technology systems for human amplification.</p>
-        <p>&copy; <span data-current-year></span> Kelvory. Static site, ready for free hosting.</p>
+        <p>&copy; <span data-current-year></span> Kelvory. Research systems for the next era of work.</p>
       </footer>
     </div>
 

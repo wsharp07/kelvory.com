@@ -28,10 +28,17 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare publish directory
+        run: |
+          rm -rf _site
+          mkdir -p _site/assets
+          cp index.html 404.html styles.css script.js CNAME .nojekyll _site/
+          cp assets/favicon.svg assets/logo-symbol.svg _site/assets/
+
       - name: Upload static site artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: .
+          path: _site
 
       - name: Deploy GitHub Pages site
         id: deployment

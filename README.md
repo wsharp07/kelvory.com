@@ -3,7 +3,7 @@
 This project is a pure static website for `kelvory.com`. It uses:
 
 - `index.html` for the landing page
-- `brand-guide.html` for the brand system and culture guide
+- `internal/brand-guide.html` for the internal brand system and culture guide
 - `404.html` for the GitHub Pages error surface
 - `styles.css` for all visual design
 - `script.js` for scroll reveals and footer year updates
@@ -24,6 +24,8 @@ Then open `http://localhost:4173`.
 ## GitHub Pages deployment
 
 This project is configured for GitHub Pages with a custom workflow and custom domain.
+The workflow publishes only the public marketing site files. Internal docs such as
+`internal/brand-guide.html` are intentionally excluded from the deployed artifact.
 
 1. Push this directory to a GitHub repository.
 2. Make sure the default branch is `main`, or update `.github/workflows/deploy-pages.yml`.
