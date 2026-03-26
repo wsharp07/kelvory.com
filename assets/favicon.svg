@@ -1,15 +1,15 @@
 <svg width="64" height="64" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="sensorHaloFaviconAccent" x1="128" y1="42" x2="128" y2="214" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#67F0FF"/>
-      <stop offset="1" stop-color="#DF7AFE"/>
+    <linearGradient id="eclipseFlareFavicon" x1="82" y1="52" x2="174" y2="52" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FAF6FF"/>
+      <stop offset="1" stop-color="#67F0FF" stop-opacity="0"/>
     </linearGradient>
   </defs>
 
   <rect width="256" height="256" rx="56" fill="#070B14"/>
-  <circle cx="128" cy="128" r="76" stroke="#FAF6FF" stroke-width="14"/>
-  <circle cx="128" cy="128" r="40" stroke="#FAF6FF" stroke-width="14"/>
-  <circle cx="128" cy="128" r="16" fill="#FAF6FF"/>
-  <path d="M98 106C90 114 90 142 98 150" stroke="url(#sensorHaloFaviconAccent)" stroke-width="12" stroke-linecap="round"/>
-  <path d="M158 106C166 114 166 142 158 150" stroke="url(#sensorHaloFaviconAccent)" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="128" cy="136" r="74" stroke="#FAF6FF" stroke-width="14"/>
+  <path d="M82 52H174" stroke="url(#eclipseFlareFavicon)" stroke-width="7" stroke-linecap="round"/>
+  <path d="M128 40V66" stroke="url(#eclipseFlareFavicon)" stroke-width="6" stroke-linecap="round"/>
+  <path d="M114 50H142" stroke="#FAF6FF" stroke-width="4" stroke-linecap="round"/>
 </svg>

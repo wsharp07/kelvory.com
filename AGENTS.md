@@ -28,15 +28,16 @@
 - Legacy cyan/lime/cobalt tokens still exist in `styles.css` for internal pages and older exploration surfaces. Do not remove them casually just because the public homepage now uses the violet system.
 - Typography uses `Sora` for headlines, `IBM Plex Sans` for body copy, and `IBM Plex Mono` for technical labels.
 - The SVG logo lives in `assets/logo-symbol.svg`; the favicon is `assets/favicon.svg`.
-- Logo exploration concepts live in `assets/logo-explorations/`, with a comparison board at `logo-options.html`. The production logo now uses the `Sensor Halo` direction in `assets/logo-symbol.svg`.
+- Logo exploration concepts live in `assets/logo-explorations/`, with a comparison board at `logo-options.html`. The production logo now uses the `Eclipse Ring` direction in `assets/logo-symbol.svg`.
 - The current minimalist icon explorations are `launch-window`, `twin-vector`, and `horizon-arc` in `assets/logo-explorations/`. They keep the public site's violet palette and compact icon-left, wordmark-right layout, but shift away from literal monograms toward more abstract "future systems" symbols.
 - Recent user feedback: the icon direction should not feel locked to a `K`; sharper abstract forms that imply future, motion, or next-state systems are preferred.
 - Newer feedback narrows preference toward the `Twin Vector` family specifically. Close sibling variations in the same sharp abstract language are preferred over broad concept jumps.
 - Focused `Twin Vector` variants now include `twin-vector`, `climb-vector`, and `vector-channel` in `assets/logo-explorations/`.
 - Latest feedback supersedes that narrower direction: the user does not like the Twin Vector family and instead wants one rounded monoline `K` inspired by the attached `M` reference plus abstract symbols inspired by the attached halo, eclipse, and triad references.
 - The current reference-driven study set is `pulse-k`, `sensor-halo`, `eclipse-ring`, and `triad-node` in `assets/logo-explorations/`.
-- `assets/favicon.svg` is now a simplified `Sensor Halo` favicon tuned for small-size legibility on dark backgrounds.
-- `logo-options.html` currently focuses on that new set and marks `Sensor Halo` as the selected production direction.
+- `assets/favicon.svg` is now a simplified `Eclipse Ring` favicon tuned for small-size legibility on dark backgrounds.
+- User correction after rollout: option `#3` (`Eclipse Ring`) was the intended selected mark, not `Sensor Halo`.
+- `logo-options.html` currently focuses on that new set and marks `Eclipse Ring` as the selected production direction.
 - Keep additions visually sharp and intentional. Avoid generic SaaS layouts or default purple-on-white styling.
 
 ## Editing guidance
