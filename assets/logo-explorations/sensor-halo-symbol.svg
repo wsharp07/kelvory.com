@@ -1,0 +1,29 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sensorHaloAccent" x1="48" y1="10" x2="48" y2="86" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="1" stop-color="#DF7AFE"/>
+    </linearGradient>
+  </defs>
+
+  <g stroke="url(#sensorHaloAccent)" stroke-width="3.8" stroke-linecap="round">
+    <line x1="48" y1="7" x2="48" y2="14"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(30 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(60 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(90 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(120 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(150 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(180 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(210 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(240 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(270 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(300 48 48)"/>
+    <line x1="48" y1="7" x2="48" y2="14" transform="rotate(330 48 48)"/>
+  </g>
+
+  <circle cx="48" cy="48" r="36" stroke="#FAF6FF" stroke-width="4.5"/>
+  <circle cx="48" cy="48" r="18" stroke="#FAF6FF" stroke-width="4.5"/>
+  <circle cx="48" cy="48" r="7.5" fill="#FAF6FF"/>
+  <path d="M34 38C30 42 30 54 34 58" stroke="url(#sensorHaloAccent)" stroke-width="5" stroke-linecap="round"/>
+  <path d="M62 38C66 42 66 54 62 58" stroke="url(#sensorHaloAccent)" stroke-width="5" stroke-linecap="round"/>
+</svg>

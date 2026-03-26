@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kelvory Logo Explorations</title>
+    <meta
+      name="description"
+      content="Minimal lockup explorations for the Kelvory identity."
+    >
+    <meta name="theme-color" content="#050507">
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .exploration-copy {
+        margin-bottom: 34px;
+        max-width: 70ch;
+      }
+
+      .exploration-copy h1 {
+        font-size: clamp(2.8rem, 6vw, 4.8rem);
+        max-width: 10ch;
+      }
+
+      .logo-board {
+        display: grid;
+        gap: 24px;
+      }
+
+      .logo-card {
+        background: linear-gradient(180deg, rgba(15, 14, 24, 0.94), rgba(10, 10, 16, 0.88));
+        border: 1px solid rgba(255, 255, 255, 0.09);
+        border-radius: 30px;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+        overflow: hidden;
+      }
+
+      .logo-card.recommended {
+        border-color: rgba(223, 122, 254, 0.32);
+        box-shadow:
+          0 24px 60px rgba(0, 0, 0, 0.28),
+          0 0 0 1px rgba(223, 122, 254, 0.1);
+      }
+
+      .logo-card-header {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+        justify-content: space-between;
+        padding: 24px 24px 0;
+      }
+
+      .logo-card-header h2 {
+        font-size: 1.45rem;
+      }
+
+      .status-pill {
+        border: 1px solid rgba(255, 255, 255, 0.14);
+        border-radius: 999px;
+        color: var(--muted);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.7rem;
+        letter-spacing: 0.08em;
+        padding: 8px 12px;
+        text-transform: uppercase;
+        white-space: nowrap;
+      }
+
+      .status-pill.recommended {
+        border-color: rgba(223, 122, 254, 0.34);
+        color: #f0c7ff;
+      }
+
+      .logo-stage {
+        background:
+          radial-gradient(circle at 18% 22%, rgba(223, 122, 254, 0.18), transparent 32%),
+          radial-gradient(circle at 82% 16%, rgba(129, 74, 200, 0.18), transparent 28%),
+          linear-gradient(180deg, rgba(9, 9, 14, 0.98), rgba(14, 13, 21, 0.98));
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        display: grid;
+        gap: 18px;
+        padding: 24px;
+      }
+
+      .header-mock {
+        align-items: center;
+        background: rgba(8, 8, 12, 0.82);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 24px;
+        display: flex;
+        gap: 22px;
+        justify-content: space-between;
+        min-height: 120px;
+        overflow: hidden;
+        padding: 18px 20px;
+      }
+
+      .header-mock img {
+        max-width: min(100%, 470px);
+        width: 100%;
+      }
+
+      .mock-nav {
+        display: flex;
+        gap: 10px;
+      }
+
+      .mock-nav span {
+        background: rgba(255, 255, 255, 0.09);
+        border-radius: 999px;
+        display: block;
+        height: 10px;
+        width: 52px;
+      }
+
+      .logo-detail-row {
+        align-items: center;
+        display: flex;
+        gap: 16px;
+      }
+
+      .symbol-chip {
+        align-items: center;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 20px;
+        display: flex;
+        height: 78px;
+        justify-content: center;
+        width: 78px;
+      }
+
+      .symbol-chip img {
+        height: 44px;
+        width: 44px;
+      }
+
+      .usage-note strong {
+        color: var(--text);
+        display: block;
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        margin-bottom: 6px;
+        text-transform: uppercase;
+      }
+
+      .usage-note p {
+        margin: 0;
+      }
+
+      .logo-card-body {
+        display: grid;
+        gap: 12px;
+        padding: 24px;
+      }
+
+      .logo-trait {
+        color: var(--accent-bright);
+        font-family: "IBM Plex Mono", monospace;
+        font-size: 0.76rem;
+        letter-spacing: 0.08em;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .logo-card-body p {
+        margin: 0;
+      }
+
+      .logo-card-body strong {
+        color: var(--text);
+      }
+
+      .option-summary {
+        background: rgba(13, 13, 20, 0.88);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        border-radius: 26px;
+        margin-top: 28px;
+        padding: 24px;
+      }
+
+      .option-summary h2 {
+        font-size: 1.4rem;
+        margin-bottom: 14px;
+      }
+
+      .option-summary ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+
+      .option-summary li + li {
+        margin-top: 10px;
+      }
+
+      .exploration-footnote {
+        color: var(--subtle);
+        font-size: 0.95rem;
+        margin-top: 18px;
+      }
+
+      @media (max-width: 880px) {
+        .header-mock {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .mock-nav {
+          display: none;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .logo-card-header {
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .logo-detail-row {
+          align-items: flex-start;
+        }
+
+        .symbol-chip {
+          flex-shrink: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Kelvory home">
+          <img src="assets/logo-symbol.svg" alt="Kelvory logo symbol" width="40" height="40">
+          <span class="brand-lockup">
+            <strong>Kelvory</strong>
+            <small>Logo Explorations</small>
+          </span>
+        </a>
+
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="section">
+          <div class="section-heading exploration-copy">
+            <p class="eyebrow">Identity Explorations</p>
+            <h1>Rounded K and abstract symbol studies for Kelvory.</h1>
+            <p>
+              This round follows your references more directly: one monoline `K` inspired by the
+              rounded `M`, plus three more abstract marks pulled from the halo, eclipse, and triad
+              symbol language in the inspiration set.
+            </p>
+          </div>
+
+          <div class="logo-board">
+            <article class="logo-card">
+              <div class="logo-card-header">
+                <h2>Option 1: Pulse K</h2>
+                <span class="status-pill">Alt K</span>
+              </div>
+              <div class="logo-stage">
+                <div class="header-mock">
+                  <img src="assets/logo-explorations/pulse-k-lockup.svg" alt="Kelvory Pulse K logo option">
+                  <div class="mock-nav" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="logo-detail-row">
+                  <div class="symbol-chip">
+                    <img src="assets/logo-explorations/pulse-k-symbol.svg" alt="">
+                  </div>
+                  <div class="usage-note">
+                    <strong>Rounded monoline K</strong>
+                    <p>
+                      A detached node and thick rounded strokes echo the `M` reference without
+                      turning it into a copy. It stays clean but still has personality.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="logo-card-body">
+                <p class="logo-trait">Monoline / rounded / closest to your ask</p>
+                <p>
+                  <strong>Why I think you’ll like it:</strong> it gives you the clearer `K`
+                  direction you asked for, but with a softer, more contemporary silhouette than the
+                  angular options we tried before.
+                </p>
+                <p>
+                  If the brand needs a letterform, this is the strongest starting point in this set.
+                </p>
+              </div>
+            </article>
+
+            <article class="logo-card recommended">
+              <div class="logo-card-header">
+                <h2>Option 2: Sensor Halo</h2>
+                <span class="status-pill recommended">Selected</span>
+              </div>
+              <div class="logo-stage">
+                <div class="header-mock">
+                  <img src="assets/logo-explorations/sensor-halo-lockup.svg" alt="Kelvory Sensor Halo logo option">
+                  <div class="mock-nav" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="logo-detail-row">
+                  <div class="symbol-chip">
+                    <img src="assets/logo-explorations/sensor-halo-symbol.svg" alt="">
+                  </div>
+                  <div class="usage-note">
+                    <strong>Scanner / core / system</strong>
+                    <p>
+                      This takes the circular technical reference and strips it down into something
+                      cleaner and more logo-like, while still feeling like a sensing or control core.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="logo-card-body">
+                <p class="logo-trait">Technical / iconic / futuristic</p>
+                <p>
+                  <strong>Why I think you’ll like it:</strong> it feels advanced and ownable without
+                  relying on a letter, which may give Kelvory more room to become its own thing.
+                </p>
+                <p>
+                  This is my favorite abstract option in the new set.
+                </p>
+              </div>
+            </article>
+
+            <article class="logo-card">
+              <div class="logo-card-header">
+                <h2>Option 3: Eclipse Ring</h2>
+                <span class="status-pill">Most Minimal</span>
+              </div>
+              <div class="logo-stage">
+                <div class="header-mock">
+                  <img src="assets/logo-explorations/eclipse-ring-lockup.svg" alt="Kelvory Eclipse Ring logo option">
+                  <div class="mock-nav" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="logo-detail-row">
+                  <div class="symbol-chip">
+                    <img src="assets/logo-explorations/eclipse-ring-symbol.svg" alt="">
+                  </div>
+                  <div class="usage-note">
+                    <strong>Halo / aperture / signal</strong>
+                    <p>
+                      The simplest symbol here: a precise ring with a slight flare. It feels more
+                      premium and cinematic than overtly technical.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="logo-card-body">
+                <p class="logo-trait">Minimal / premium / atmospheric</p>
+                <p>
+                  <strong>Why I think you’ll like it:</strong> it is the cleanest and most elegant
+                  abstract mark of the group, and it pairs naturally with the site’s darker, more
+                  atmospheric brand mood.
+                </p>
+                <p>
+                  Choose this one if you want a quieter symbol that still feels futuristic.
+                </p>
+              </div>
+            </article>
+
+            <article class="logo-card">
+              <div class="logo-card-header">
+                <h2>Option 4: Triad Node</h2>
+                <span class="status-pill">Most Emblematic</span>
+              </div>
+              <div class="logo-stage">
+                <div class="header-mock">
+                  <img src="assets/logo-explorations/triad-node-lockup.svg" alt="Kelvory Triad Node logo option">
+                  <div class="mock-nav" aria-hidden="true">
+                    <span></span><span></span><span></span>
+                  </div>
+                </div>
+                <div class="logo-detail-row">
+                  <div class="symbol-chip">
+                    <img src="assets/logo-explorations/triad-node-symbol.svg" alt="">
+                  </div>
+                  <div class="usage-note">
+                    <strong>Triad / node / command</strong>
+                    <p>
+                      Inspired by the triangular symbol reference, this one feels more like an
+                      advanced insignia or systems emblem than a conventional app icon.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="logo-card-body">
+                <p class="logo-trait">Symbolic / bold / insignia-like</p>
+                <p>
+                  <strong>Why I think you’ll like it:</strong> it has the strongest “skunkworks
+                  lab” energy in the group and could work well if you want the identity to feel a
+                  little more clandestine and elite.
+                </p>
+                <p>
+                  Choose this one if you want the brand to feel more like a mark or badge than a
+                  software logo.
+                </p>
+              </div>
+            </article>
+          </div>
+
+          <div class="option-summary">
+            <h2>My read after vetting them</h2>
+            <ul>
+              <li>`Sensor Halo` is the selected production direction because it feels the most ownable and advanced without depending on a letter.</li>
+              <li>`Pulse K` is the best direct answer to your request for a mark like the rounded `M`, but as a `K`.</li>
+              <li>`Eclipse Ring` is the cleanest premium abstraction if you want maximum restraint.</li>
+              <li>`Triad Node` is the boldest emblem if you want the identity to feel more covert and symbolic.</li>
+            </ul>
+            <p class="exploration-footnote">
+              These are still exploration assets only, so we can choose the best direction before
+              replacing the production logo files.
+            </p>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<svg width="620" height="128" viewBox="0 0 620 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="triadNodeAccentLockup" x1="64" y1="30" x2="64" y2="50" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="1" stop-color="#DF7AFE"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M26 20H102L94 30H34L26 20Z" fill="#FAF6FF"/>
+  <path d="M28 22H46L64 56L54 106H40L48 56L28 22Z" fill="#FAF6FF"/>
+  <path d="M100 22H82L64 56L74 106H88L80 56L100 22Z" fill="#FAF6FF"/>
+  <path d="M58 58H70L76 106H52L58 58Z" fill="#FAF6FF"/>
+  <circle cx="64" cy="38" r="7.5" fill="url(#triadNodeAccentLockup)"/>
+
+  <g stroke="#FAF6FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M154 32V96"/>
+    <path d="M154 64L188 32"/>
+    <path d="M154 64L190 96"/>
+    <path d="M214 32V96"/>
+    <path d="M214 32H250"/>
+    <path d="M214 64H244"/>
+    <path d="M214 96H250"/>
+    <path d="M274 32V96"/>
+    <path d="M274 96H308"/>
+    <path d="M326 32L350 96"/>
+    <path d="M374 32L350 96"/>
+    <rect x="392" y="32" width="52" height="64" rx="18"/>
+    <path d="M466 32V96"/>
+    <path d="M466 32H496C508 32 516 40 516 52C516 64 508 72 496 72H466"/>
+    <path d="M494 72L518 96"/>
+    <path d="M538 32L560 58"/>
+    <path d="M582 32L560 58"/>
+    <path d="M560 58V96"/>
+  </g>
+</svg>

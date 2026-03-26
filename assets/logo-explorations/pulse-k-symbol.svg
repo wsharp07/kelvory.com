@@ -1,0 +1,14 @@
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pulseKGradient" x1="16" y1="14" x2="76" y2="82" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF"/>
+      <stop offset="0.52" stop-color="#85FFD7"/>
+      <stop offset="1" stop-color="#DF7AFE"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="16" cy="74" r="9" fill="url(#pulseKGradient)"/>
+  <path d="M34 18V78" stroke="url(#pulseKGradient)" stroke-width="17" stroke-linecap="round"/>
+  <path d="M40 48L68 18" stroke="url(#pulseKGradient)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M40 48L70 78" stroke="url(#pulseKGradient)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

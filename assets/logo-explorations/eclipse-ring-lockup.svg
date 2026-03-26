@@ -1,0 +1,35 @@
+<svg width="620" height="128" viewBox="0 0 620 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="eclipseFlareLockup" x1="34" y1="24" x2="94" y2="24" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#67F0FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FAF6FF"/>
+      <stop offset="1" stop-color="#67F0FF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <circle cx="64" cy="64" r="36" stroke="#FAF6FF" stroke-width="9"/>
+  <path d="M34 24H94" stroke="url(#eclipseFlareLockup)" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M64 14V30" stroke="url(#eclipseFlareLockup)" stroke-width="4" stroke-linecap="round"/>
+  <path d="M56 22H72" stroke="#FAF6FF" stroke-width="3" stroke-linecap="round"/>
+
+  <g stroke="#FAF6FF" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M154 32V96"/>
+    <path d="M154 64L188 32"/>
+    <path d="M154 64L190 96"/>
+    <path d="M214 32V96"/>
+    <path d="M214 32H250"/>
+    <path d="M214 64H244"/>
+    <path d="M214 96H250"/>
+    <path d="M274 32V96"/>
+    <path d="M274 96H308"/>
+    <path d="M326 32L350 96"/>
+    <path d="M374 32L350 96"/>
+    <rect x="392" y="32" width="52" height="64" rx="18"/>
+    <path d="M466 32V96"/>
+    <path d="M466 32H496C508 32 516 40 516 52C516 64 508 72 496 72H466"/>
+    <path d="M494 72L518 96"/>
+    <path d="M538 32L560 58"/>
+    <path d="M582 32L560 58"/>
+    <path d="M560 58V96"/>
+  </g>
+</svg>
