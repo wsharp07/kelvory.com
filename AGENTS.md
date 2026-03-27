@@ -20,9 +20,10 @@
 ## Design system notes
 
 - Brand direction is "high-technology skunkworks": dark atmospheric surfaces, cyan/lime/cobalt signal accents, geometric framing, and restrained glow.
-- The current public homepage is a teaser-style R&D surface for Kelvory as an autonomous systems lab. Copy should emphasize frontier systems work, memory-native agents, digital twins, operator control, and ideas that feel early rather than agency-style service selling.
+- The current public homepage is a teaser-style R&D surface for Kelvory as a cognitive extension lab. Copy should emphasize AI as an extension of human cognition, digital twins, memory-native environments, linked knowledge, operator control, and the idea of helping human ability catch up to human intellect rather than agency-style service selling.
 - The public header now uses a dark rounded slab with simple nav links on desktop and a three-line hamburger button on mobile. Keep navigation free of CTA buttons.
 - Homepage-specific layout is now driven by custom sections such as `.logo-strip-section`, `.statement-section`, `.values-section`, `.services-section`, `.timeline`, and `.case-study-card`. Prefer extending those patterns rather than reintroducing generic feature-card grids on the public home page.
+- The homepage now includes explicit Mission and Vision messaging inside `.statement-section`, with a `.mission-grid` and `.cognition-map` framing AI as a digital twin / second cognitive system.
 - Public-facing pages should not expose email addresses or contact CTAs unless the user explicitly asks to bring them back. The current homepage and `404.html` are intentionally teaser-only.
 - Avoid references to outside companies on the public homepage, and keep the internal brand guide philosophies written as standalone principles rather than attributing them to other organizations.
 - Legacy cyan/lime/cobalt tokens still exist in `styles.css` for internal pages and older exploration surfaces. Do not remove them casually just because the public homepage now uses the violet system.
@@ -39,6 +40,8 @@
 - User correction after rollout: option `#3` (`Eclipse Ring`) was the intended selected mark, not `Sensor Halo`.
 - `logo-options.html` currently focuses on that new set and marks `Eclipse Ring` as the selected production direction.
 - Keep additions visually sharp and intentional. Avoid generic SaaS layouts or default purple-on-white styling.
+- Public nav anchors now target `#mission`, `#directions`, and `#principles`; the process section uses `#method`.
+- `internal/brand-guide.html` now mirrors the public framing with updated Mission and Vision language centered on cognitive extension and trusted digital twins.
 
 ## Editing guidance
 

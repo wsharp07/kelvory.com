@@ -375,7 +375,7 @@ h4 {
 
 .hero-copy h1 {
   margin: 0 auto;
-  max-width: 11ch;
+  max-width: 12ch;
 }
 
 .hero-badge {
@@ -1460,6 +1460,112 @@ h4 {
   padding-top: 92px;
 }
 
+.mission-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 18px;
+}
+
+.mission-card,
+.cognition-map {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02)),
+    rgba(13, 13, 20, 0.78);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 32px;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+  position: relative;
+}
+
+.mission-card::before,
+.cognition-map::before {
+  background: linear-gradient(90deg, transparent, rgba(223, 122, 254, 0.24), transparent);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.mission-card {
+  display: grid;
+  gap: 14px;
+  min-height: 264px;
+  padding: 30px;
+}
+
+.mission-card .card-tag {
+  margin-bottom: 0;
+}
+
+.mission-card h3 {
+  max-width: 16ch;
+}
+
+.mission-card p {
+  margin: 0;
+}
+
+.mission-card-primary {
+  background:
+    linear-gradient(135deg, rgba(223, 122, 254, 0.18), rgba(95, 125, 255, 0.08)),
+    rgba(13, 13, 20, 0.88);
+}
+
+.cognition-map {
+  align-items: stretch;
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 24px;
+  padding: 28px;
+}
+
+.cognition-rail {
+  background: linear-gradient(90deg, rgba(223, 122, 254, 0.08), rgba(223, 122, 254, 0.56), rgba(223, 122, 254, 0.08));
+  height: 2px;
+  left: 16%;
+  position: absolute;
+  right: 16%;
+  top: calc(50% - 1px);
+}
+
+.cognition-node {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  min-height: 192px;
+  padding: 22px;
+  position: relative;
+  z-index: 1;
+}
+
+.cognition-node span {
+  color: var(--accent-bright);
+  display: block;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.cognition-node strong {
+  display: block;
+  font-size: 1.08rem;
+  line-height: 1.42;
+}
+
+.cognition-node-core {
+  background:
+    linear-gradient(135deg, rgba(223, 122, 254, 0.22), rgba(95, 125, 255, 0.1)),
+    rgba(13, 13, 20, 0.9);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
 .story-stage {
   align-items: center;
   display: grid;
@@ -1622,7 +1728,7 @@ h4 {
 }
 
 .stat-band .proof-card span {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .values-section {
@@ -2143,6 +2249,14 @@ h4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .cognition-map {
+    grid-template-columns: 1fr;
+  }
+
+  .cognition-rail {
+    display: none;
+  }
+
   .story-stage,
   .case-study-card {
     grid-template-columns: 1fr;
@@ -2251,7 +2365,8 @@ h4 {
   .contact-meta,
   .philosophy-grid,
   .signal-grid,
-  .swatch-grid {
+  .swatch-grid,
+  .mission-grid {
     grid-template-columns: 1fr;
   }
 
@@ -2426,6 +2541,8 @@ h4 {
   }
 
   .story-media-card,
+  .mission-card,
+  .cognition-map,
   .case-study-card,
   .value-card,
   .service-card,
@@ -2437,6 +2554,12 @@ h4 {
 
   .story-media {
     height: 210px;
+  }
+
+  .cognition-node {
+    border-radius: 22px;
+    min-height: auto;
+    padding: 18px;
   }
 
   .story-room {
